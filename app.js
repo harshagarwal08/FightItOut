@@ -57,7 +57,6 @@ const autoCompleteConfig = {
         i: movie.imdbID
       }
     });
-    console.log(response.data)
     summaryElement.innerHTML = movieTemplate(response.data);
   
     if (side === 'left') {
