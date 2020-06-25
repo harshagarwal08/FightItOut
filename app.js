@@ -88,15 +88,10 @@ const autoCompleteConfig = {
         if (rightSideValue > leftSideValue) {
           leftStat.classList.remove('is-primary');
           leftStat.classList.add('is-warning');
-        } else if(rightSideValue< leftSideValue){
+        } else{
           rightStat.classList.remove('is-primary');
           rightStat.classList.add('is-warning');
-        }
-        else{
-            rightStat.classList.add('is-primary');
-            leftStat.classList.add('is-primary')
-        }
-       
+        }       
       });
   };
 
