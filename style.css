@@ -1,0 +1,195 @@
+.tutorial {
+  text-align: center;
+  margin: auto;
+}
+.tutorial h1{
+  font-size: 1.5rem;
+}
+
+figure.image {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+figure .image img {
+  width: 128px;
+}
+.icon i{
+  font-size: 2.3rem;
+}
+.vs-icon{
+  display: none;
+}
+.notification {
+  margin-top: 20px !important;
+}
+#left-summary .notification{
+  padding: 15px;
+}
+#left-summary .notification p{
+  font-size: 1.5rem;
+}
+#right-summary .notification{
+  padding: 15px;
+}
+#right-summary .notification p{
+  font-size: 1.5rem;
+}
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.title .icon {
+  margin-left: 15px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+.hero-body{
+  padding: 24px 24px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.dropdown-item img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.content h1{
+  margin-bottom: 5px;
+}
+.content h6{
+  margin-left: 3px;
+}
+
+.input::placeholder{
+  font-weight: bold;
+  color: rgba(0,0,0,0.4)
+}
+
+.flex-contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  background: #00d1b2;
+  border-radius: 20px;
+  width: 100px;
+  color: white;
+  margin-bottom: 15px;
+}
+.button:hover{
+  color: white;
+}
+.button:focus, .button:active{
+  border: none;
+  outline: none;
+  color: white;
+}
+
+ @media screen and (max-width: 768px){
+   .container{
+     display: flex;
+     flex-direction: column;
+   } 
+
+   #left-autocomplete{
+    max-width: 85%;
+    margin: 20px auto 0 auto;
+   }
+   #right-autocomplete{
+    max-width: 85%;
+    margin: 20px auto;
+   }
+  #left-summary{
+    max-width: 80%;
+    margin: 0 auto 10px;
+  }
+  #right-summary{
+    max-width: 80%;
+    margin: auto;
+  }
+  .media-left .image img{
+      width: 110px;
+      height: 180px;
+  }
+  .content h1{
+    font-size: 1.5rem;
+  }
+  .content h6{
+    font-size: 0.9rem;
+  }
+  .content h4{
+    font-size: 1rem;
+  }
+  .content p{
+    font-size: 0.9rem;
+  }
+  .notification{
+    padding: 10px !important;
+  }
+  .notification p{
+    font-size: 1.2rem !important;
+  }
+  .tutorial{
+    width: 80%;
+    margin-top: 0 !important;
+    display: none;
+  }
+  .tutorial h1{
+    font-size: 1rem;
+  }
+  .columns{
+    padding-bottom: 40px;
+  }
+  .button{
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .vs-icon{
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    border: #00d1b2 2px solid;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .columns{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .dropdown-item span{
+    width: 230px;
+  }
+ } 
+ @media screen and (max-width: 370px){
+   .dropdown-item span{
+     width: 200px;
+   }
+ }
+ @media screen and (min-width: 418px){
+   .dropdown-item span{
+     width: 280px;
+   }
+ @media screen and (min-width: 545px){
+   .dropdown-item span{
+     width: 100%;
+   }
+ }
+}
